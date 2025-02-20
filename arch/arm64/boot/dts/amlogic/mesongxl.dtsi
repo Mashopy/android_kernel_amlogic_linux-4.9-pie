@@ -1252,32 +1252,144 @@
 	};
 
 	custom_maps:custom_maps {
-		mapnum = <1>;
+		mapnum = <3>;
 		map0 = <&map_0>;
+		map1 = <&map_1>;
+		map2 = <&map_2>;
 		map_0: map_0{
-			mapname = "khadas-ir";
-			customcode = <0xff00>;
+			mapname = "amlogic-remote-1";
+			customcode = <0xfb04>;
 			release_delay = <80>;
-			fn_key_scancode = <0x5b>;
-			cursor_left_scancode = <0x0e>;
-			cursor_right_scancode = <0x1a>;
-			cursor_up_scancode = <0x03>;
-			cursor_down_scancode = <0x02>;
-			cursor_ok_scancode = <0x07>;
-			size  = <13>;   /*keymap size*/
-			keymap = <REMOTE_KEY(0x14, 116)
-				REMOTE_KEY(0x13,139)
-				REMOTE_KEY(0x03,103)
-				REMOTE_KEY(0x02,108)
-				REMOTE_KEY(0x0e,105)
-				REMOTE_KEY(0x1a,106)
-				REMOTE_KEY(0x07,232)
-				REMOTE_KEY(0x58,114)
-				REMOTE_KEY(0x5c,63)
-				REMOTE_KEY(0x5b,63)
-				REMOTE_KEY(0x0b,115)
-				REMOTE_KEY(0x01,158)
-				REMOTE_KEY(0x48,102)>;
+			size  = <50>;   /*keymap size*/
+			keymap = <REMOTE_KEY(0x47, 11)
+				REMOTE_KEY(0x13,2)
+				REMOTE_KEY(0x10,3)
+				REMOTE_KEY(0x11,4)
+				REMOTE_KEY(0xf0,5)
+				REMOTE_KEY(0xc0,6)
+				REMOTE_KEY(0xd0,7)
+				REMOTE_KEY(0xb0,8)
+				REMOTE_KEY(0x80,9)
+				REMOTE_KEY(0x90,10)
+				REMOTE_KEY(0x5c,97)
+				REMOTE_KEY(0x51,61)
+				REMOTE_KEY(0x50,62)
+				REMOTE_KEY(0x40,63)
+				REMOTE_KEY(0x4d,64)
+				REMOTE_KEY(0x43,65)
+				REMOTE_KEY(0x17,66)
+				REMOTE_KEY(0x43, 0)
+				REMOTE_KEY(0x10,68)
+				REMOTE_KEY(0x16,87)
+				REMOTE_KEY(0x49,14)
+				REMOTE_KEY(0x60,130)
+				REMOTE_KEY(0x14,131)
+				REMOTE_KEY(0x44,103)
+				REMOTE_KEY(0x1d,108)
+				REMOTE_KEY(0x1c,105)
+				REMOTE_KEY(0x48,106)
+				REMOTE_KEY(0x53,125)
+				REMOTE_KEY(0x45,104)
+				REMOTE_KEY(0x19,109)
+				REMOTE_KEY(0x52,119)
+				REMOTE_KEY(0x50,122)
+				REMOTE_KEY(0x59,123)
+				REMOTE_KEY(0x1b,120)
+				REMOTE_KEY(0x40,121)
+				REMOTE_KEY(0x1a,116)
+				REMOTE_KEY(0xa,15)
+				REMOTE_KEY(0xe,113)
+				REMOTE_KEY(0x1f,102)
+				REMOTE_KEY(0x1e,132)
+				REMOTE_KEY(0x70,133)
+				REMOTE_KEY(0x12,134)
+				REMOTE_KEY(0x57,135)
+				REMOTE_KEY(0x20,136)
+				REMOTE_KEY(0x4f,30)
+				REMOTE_KEY(0x42,48)
+				REMOTE_KEY(0x5d,46)
+				REMOTE_KEY(0x4c,32)
+				REMOTE_KEY(0x58,137)
+				REMOTE_KEY(0x55,140)>;
+		};
+		map_1: map_1{
+			mapname = "amlogic-remote-2";
+			customcode = <0xfe01>;
+			release_delay = <80>;
+			fn_key_scancode = <0x00>;
+			cursor_left_scancode = <0x51>;
+			cursor_right_scancode = <0x50>;
+			cursor_up_scancode = <0x16>;
+			cursor_down_scancode = <0x1a>;
+			cursor_ok_scancode = <0x13>;
+			size  = <44>;   /*keymap size*/
+			keymap = <REMOTE_KEY(0x10, 11)
+				REMOTE_KEY(0x4e, 2)
+				REMOTE_KEY(0xd, 3)
+				REMOTE_KEY(0xc, 4)
+				REMOTE_KEY(0x4a, 5)
+				REMOTE_KEY(0x9, 6)
+				REMOTE_KEY(0x8, 7)
+				REMOTE_KEY(0x46, 8)
+				REMOTE_KEY(0x50, 9)
+				REMOTE_KEY(0x40, 10)
+				REMOTE_KEY(0x49, 63)
+				REMOTE_KEY(0x48, 78)
+				REMOTE_KEY(0x4d, 75)
+				REMOTE_KEY(0x30, 76)
+				REMOTE_KEY(0x43, 77)
+				REMOTE_KEY(0x45, 64)
+				REMOTE_KEY(0xf, 65)
+				REMOTE_KEY(0x44, 66)
+				REMOTE_KEY(0x12, 67)
+				REMOTE_KEY(0x4b, 68)
+				REMOTE_KEY(0x26, 69)
+				REMOTE_KEY(0x16, 103)
+				REMOTE_KEY(0x1a, 108)
+				REMOTE_KEY(0x51, 105)
+				REMOTE_KEY(0x50, 106)
+				REMOTE_KEY(0x13, 28)
+				REMOTE_KEY(0x19, 158)
+				REMOTE_KEY(0x4c, 125)
+				REMOTE_KEY(0x40, 116)
+				REMOTE_KEY(0x41, 113)
+				REMOTE_KEY(0x18, 115)
+				REMOTE_KEY(0x10, 114)
+				REMOTE_KEY(0x11, 102)
+				REMOTE_KEY(0xa, 111)
+				REMOTE_KEY(0x42, 14)
+				REMOTE_KEY(0x47, 215)
+				REMOTE_KEY(0xe, 70)
+				REMOTE_KEY(0x59, 122)
+				REMOTE_KEY(0x58, 123)
+				REMOTE_KEY(0x54, 120)
+				REMOTE_KEY(0x52, 124)
+				REMOTE_KEY(0x5a, 119)
+				REMOTE_KEY(0x55, 121)
+				REMOTE_KEY(0x64, 0)>;
+		};
+		map_2: map_2{
+			mapname = "amlogic-remote-3";
+			customcode = <0xbd02>;
+			release_delay = <80>;
+			size  = <17>;   /*keymap size*/
+			keymap = <REMOTE_KEY(0xca, 103)
+				REMOTE_KEY(0xd2, 108)
+				REMOTE_KEY(0x99, 105)
+				REMOTE_KEY(0xc1, 106)
+				REMOTE_KEY(0xce, 97)
+				REMOTE_KEY(0x45, 116)
+				REMOTE_KEY(0xc5, 133)
+				REMOTE_KEY(0x80, 113)
+				REMOTE_KEY(0xd0, 15)
+				REMOTE_KEY(0xd6, 125)
+				REMOTE_KEY(0x95, 102)
+				REMOTE_KEY(0xdd, 104)
+				REMOTE_KEY(0x8c, 109)
+				REMOTE_KEY(0x89, 131)
+				REMOTE_KEY(0x9c, 130)
+				REMOTE_KEY(0x9a, 120)
+				REMOTE_KEY(0xcd, 121)>;
 		};
 	};
 	aml_reboot{

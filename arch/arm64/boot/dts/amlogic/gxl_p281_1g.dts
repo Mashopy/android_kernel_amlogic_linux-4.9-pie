@@ -18,7 +18,7 @@
 /dts-v1/;
 
 #include "mesongxl.dtsi"
-#include "partition_mbox_normal.dtsi"
+#include "partition_mbox_normal_p281.dtsi"
 / {
 	model = "Amlogic";
 	amlogic-dt-id = "gxl_p281_1g";
@@ -647,7 +647,7 @@
 	sysled {
 		compatible = "amlogic, sysled";
 		dev_name = "sysled";
-		status = "disabled";
+		status = "okay";
 		led_gpio = <&gpio GPIODV_24 GPIO_ACTIVE_HIGH>;
 		led_active_low = <1>;
 	};
