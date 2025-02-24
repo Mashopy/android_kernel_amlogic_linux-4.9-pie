@@ -867,8 +867,8 @@
 	spdif_codec: spdif_codec{
 		#sound-dai-cells = <0>;
 		compatible = "amlogic, aml-spdif-codec";
-		pinctrl-names = "audio_spdif";
-		pinctrl-0 = <&audio_spdif_pins>;
+		pinctrl-names = "audio_spdif_out";
+		pinctrl-0 = <&audio_spdif_out_pins>;
 	};
 	pcm_codec: pcm_codec{
 		#sound-dai-cells = <0>;
@@ -1233,3 +1233,12 @@
 	ssctl = <0>;
 };
 
+&pinctrl_periphs {
+	/*spdif*/
+	audio_spdif_out_pins: audio_spdif_out_pins {
+		mux {
+			groups = "spdif_out";
+			function = "spdif_out";
+		};
+	};
+}; /* end of pinctrl_periphs */
